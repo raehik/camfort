@@ -53,8 +53,6 @@ jobs:
       run: |
         curl -sL https://get.haskellstack.org/stable/windows-x86_64.zip -o stack.zip
         7z x stack.zip stack.exe
-        which stack
-        stack --version
         which ./stack
         ./stack --version
 
