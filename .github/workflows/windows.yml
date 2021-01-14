@@ -34,10 +34,10 @@ jobs:
 
     - name: Install available build dependencies
       run: >-
-        pacman -S
-        mingw-w64-x86_64-gcc
+        pacman -S --noconfirm
         mingw-w64-x86_64-openblas
-        mingw-w64-x86_64-mpfr
+        mingw-w64-x86_64-lapack
+        mingw-w64-x86_64-gcc
 
     - name: Build flint library
       run: |
