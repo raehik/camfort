@@ -9,7 +9,7 @@ on:
   pull_request:
     types:
     - opened
-    - synchronized
+    - synchronize
 
 jobs:
   build:
