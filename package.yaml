@@ -25,7 +25,7 @@ library:
   source-dirs: src
   build-tools:
     alex: 3.2.*
-    happy: 1.19.*
+    happy: 1.20.*
   extra-libraries: flint
   other-modules: []
   exposed-modules:
@@ -117,7 +117,7 @@ library:
 
   dependencies:
     - base >= 4.6 && < 5
-    - ghc-prim >= 0.3.1.0 && < 0.6
+    - ghc-prim >= 0.3.1.0 && < 0.7
     - containers >= 0.5.0.0 && < 0.7
     - uniplate >= 1.6.10 && < 1.7
     - syz >= 0.2 && < 0.3

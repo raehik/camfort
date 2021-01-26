@@ -15,6 +15,7 @@
 {-# LANGUAGE TypeOperators             #-}
 {-# LANGUAGE UndecidableInstances      #-}
 {-# LANGUAGE TypeApplications          #-}
+{-# LANGUAGE StandaloneKindSignatures  #-}
 
 {-|
 
