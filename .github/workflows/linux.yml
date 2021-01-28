@@ -11,13 +11,23 @@ on:
 
 jobs:
   build:
+    # ubuntu-20.04 required for a recent version of z3 (probably need >4.5)
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-    # note that we need static libs (in Ubuntu, *-dev)
+
+    # note that we require static libs (in Ubuntu, *-dev)
     - name: install required libraries
       run: sudo apt install libflint-dev liblapack-dev z3
+
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.stack
+          .stack-work
+
     - name: install project dependencies
       run: stack --no-terminal test --only-dependencies
+
     - name: build and run tests
       run: stack --no-terminal haddock --test --no-haddock-deps
