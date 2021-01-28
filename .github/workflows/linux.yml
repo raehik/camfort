@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     # note that we need static libs (in Ubuntu, *-dev)
     - name: install required libraries
-      run: sudo apt install libflint-dev liblapack3-dev z3
+      run: sudo apt install libflint-dev liblapack-dev z3
     - name: install project dependencies
       run: stack --no-terminal test --only-dependencies
     - name: build and run tests
