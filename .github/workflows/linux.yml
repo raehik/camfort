@@ -25,6 +25,7 @@ jobs:
         path: |
           ~/.stack
           .stack-work
+        key: ${{ runner.os }}
 
     - name: install project dependencies
       run: stack --no-terminal test --only-dependencies
