@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9cbad199e3bd50ec23636b7c15fc333a35e1dae1ae43ea0d3a845d200ecd37e8
+-- hash: b3e750f8a373b30ef1b048e70c9a9fd2418c4b63b5d19387da4a3b7914be5f98
 
 name:           camfort
 version:        1.0
@@ -216,7 +216,7 @@ library
     , uniplate >=1.6.10 && <1.7
     , vector >=0.1 && <0.13
     , verifiable-expressions >=0.6.0 && <0.8.0
-    , vinyl >=0.6 && <1.0
+    , vinyl >=0.9 && <1.0
   default-language: Haskell2010
 
 executable camfort
