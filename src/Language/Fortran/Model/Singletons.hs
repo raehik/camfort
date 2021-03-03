@@ -15,7 +15,12 @@
 {-# LANGUAGE TypeOperators             #-}
 {-# LANGUAGE UndecidableInstances      #-}
 {-# LANGUAGE TypeApplications          #-}
-{-# LANGUAGE StandaloneKindSignatures  #-} -- TODO should give another error
+{-# LANGUAGE CPP                       #-}
+
+-- singletons-2.7 onwards requires StandaloneKindSignatures for TH functions
+#if MIN_VERSION_base(4,14,0)
+{-# LANGUAGE StandaloneKindSignatures  #-}
+#endif
 
 {-|
 
