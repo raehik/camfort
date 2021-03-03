@@ -178,7 +178,7 @@ tests:
       - temporary >= 1.2.0.4 && < 1.4
       - lens >= 4.15.1 && < 5
       - verifiable-expressions >= 0.6.0 && < 0.8.0
-      - time >= 1.11 && < 1.12
+      - time >= 1.9 && < 1.12
 
 executable:
   main: src/Main.hs
