@@ -47,8 +47,8 @@ jobs:
         cabal: ["3.2"] # latest as of 2021-02-23
         ghc:
         - "8.6"
-        - "8.8"
-        - "8.10"
+#       - "8.8"
+#       - "8.10"
     steps:
     # note that we require static libs (in Ubuntu, *-dev)
     - name: Install required libraries
